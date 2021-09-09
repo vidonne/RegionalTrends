@@ -1,0 +1,91 @@
+---
+title: "Population Trends Analysis"
+description: |
+  Displacement & Asylum in the Americas
+preview: images/macro/ENG-MACRO-1.jpg
+twitter:
+  site: "@unhcr"
+  creator: "@unhcr"
+repository_url: https://github.com/unhcr-americas/ageingonthemove  
+output: 
+  distill::distill_article:
+    theme: theme.css
+    toc: false
+    toc_float: false
+---
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type='text/javascript'>
+$(document).ready(function() {
+  $('.tweetable').each(function() {
+     var sentence = $(this);
+     var permalink = sentence.parents('.post-outer').find('.timestamp-link').attr('href') || $(location).attr('href');
+     var tweetable = sentence.text();
+     var result = encodeURIComponent(tweetable);
+     var link = encodeURIComponent(permalink);
+     
+sentence.wrap('<a class="tweet-link" href="https://twitter.com/intent/tweet?text=' + result + " " + link +'"></a>');
+    });
+});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W55KLNP');</script>
+<!-- End Google Tag Manager -->
+ 
+ 
+ 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W55KLNP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+library(knitr)
+
+library(metathis)
+
+meta() %>%
+  meta_social(
+    title = "REGIONAL POPULATION TRENDS ANALYSIS",
+    description = "Displacement & Asylum in the Americas",
+    url = " ",
+    image = " ",
+    image_alt = "REGIONAL POPULATION TRENDS ANALYSIS",
+    og_type = "website",
+    og_author = "UNHCR",
+    twitter_card_type = "summary",
+    twitter_creator = "@unhcr"
+  )
+
+```
+
+
+## Introduction  
+
+ 
+
+```{js, echo=FALSE}  
+(function() {  
+  for (const link of document.getElementsByTagName('a')) {  
+    if (/^(https?:)?\/\//.test(link.getAttribute('href'))) link.target = '_blank';  
+  }  
+})();  
+```  
