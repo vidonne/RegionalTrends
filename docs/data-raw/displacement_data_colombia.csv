@@ -1,0 +1,15 @@
+ISO3,Name,Year,Conflict Stock Displacement,Conflict New Displacements,Disaster New Displacements,Disaster Stock Displacement
+#country+code,#country+name,#date+year,#affected+idps+ind+stock+conflict,#affected+idps+ind+newdisp+conflict,#affected+idps+ind+newdisp+disaster,#affected+idps+ind+stock+disaster
+COL,Colombia,2008,,,63000,
+COL,Colombia,2009,4916000,286000,9100,
+COL,Colombia,2010,5196000,280000,3000000,
+COL,Colombia,2011,5281000,103000,149000,
+COL,Colombia,2012,5455000,230000,71000,
+COL,Colombia,2013,5700000,157000,11000,
+COL,Colombia,2014,6044000,137000,20000,
+COL,Colombia,2015,6270000,224000,4600,
+COL,Colombia,2016,7246000,171000,31000,
+COL,Colombia,2017,6509000,139000,25000,
+COL,Colombia,2018,5761000,145000,67000,
+COL,Colombia,2019,5576000,139000,35000,1600
+COL,Colombia,2020,4922000,106000,64000,21000

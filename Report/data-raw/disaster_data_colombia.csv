@@ -1,0 +1,500 @@
+ISO3,Name,Year,Start Date,Event Name,Hazard Category,Hazard Type,New Displacements
+#country+code,#country+name,#date+year,#date+start,#description,#crisis+category,#crisis+type,#affected+idps+ind+newdisp+disaster
+COL,Colombia,2008,2008-04-14,,Geophysical,Volcanic eruption,13000
+COL,Colombia,2008,2008-12-13,,Weather related,Flood,20000
+COL,Colombia,2008,2008-09-15,,Weather related,Flood,10100
+COL,Colombia,2008,2008-11-20,,Geophysical,Volcanic eruption,12000
+COL,Colombia,2008,2008-01-17,,Geophysical,Volcanic eruption,8000
+COL,Colombia,2009,2009-01-01,,Weather related,Flood,
+COL,Colombia,2009,2009-01-01,,Weather related,Wet mass movement,593
+COL,Colombia,2009,2009-01-01,,Weather related,Wet mass movement,
+COL,Colombia,2009,2009-01-01,Galeras Volcano,Geophysical,Volcanic eruption,8500
+COL,Colombia,2010,2010-01-01,,Weather related,Flood,
+COL,Colombia,2010,2010-01-01,,Weather related,Flood,1500000
+COL,Colombia,2010,2010-01-01,,Weather related,Flood,1500000
+COL,Colombia,2010,2010-01-01,,Weather related,Wet mass movement,
+COL,Colombia,2010,2010-01-01,,Weather related,Wet mass movement,
+COL,Colombia,2010,2010-01-01,,Weather related,Wildfire,
+COL,Colombia,2011,2011-01-01,,Weather related,Flood,69000
+COL,Colombia,2011,2011-01-01,,Weather related,Wet mass movement,
+COL,Colombia,2011,2011-01-01,,Weather related,Flood,80000
+COL,Colombia,2012,2012-01-01,,Weather related,Flood,
+COL,Colombia,2012,2012-01-01,,Geophysical,Volcanic eruption,7200
+COL,Colombia,2012,2012-01-01,,Weather related,Flood,
+COL,Colombia,2012,2012-01-01,,Weather related,Flood,
+COL,Colombia,2012,2012-01-01,,Weather related,Flood,4000
+COL,Colombia,2012,2012-01-01,,Weather related,Flood,60000
+COL,Colombia,2013,2013-03-25,Sucre landslide,Weather related,Wet mass movement,136
+COL,Colombia,2013,2013-05-16,Carmen del Darien flood,Weather related,Flood,37
+COL,Colombia,2013,2013-11-18,Agrado flood,Weather related,Flood,40
+COL,Colombia,2013,2013-10-02,Barranquabermeja flood,Weather related,Flood,11
+COL,Colombia,2013,2013-11-26,Caucasia flood,Weather related,Flood,3
+COL,Colombia,2013,2013-07-30,El Tambo gale,Weather related,Storm,185
+COL,Colombia,2013,2013-08-15,El Carmen de Atrato gale,Weather related,Storm,37
+COL,Colombia,2013,2013-07-18,Guayabetal landslide,Weather related,Wet mass movement,25
+COL,Colombia,2013,2013-07-17,Medio Atrato Wildfire,Weather related,Wildfire,3
+COL,Colombia,2013,2013-08-07,Pensilvania gale,Weather related,Storm,18
+COL,Colombia,2013,2013-09-02,Suarez gale,Weather related,Storm,3
+COL,Colombia,2013,2013-08-28,Florencia flood,Weather related,Flood,37
+COL,Colombia,2013,2013-12-23,Pradera flood,Weather related,Flood,22
+COL,Colombia,2013,2013-08-15,Puerto Guzman flood,Weather related,Flood,11
+COL,Colombia,2013,2013-08-29,Monteria flood,Weather related,Flood,7
+COL,Colombia,2013,2013-06-18,Quibdo landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-03-05,Granada Gale,Weather related,Storm,11
+COL,Colombia,2013,2013-09-06,Medellin Landslide,Weather related,Wet mass movement,29
+COL,Colombia,2013,2013-05-23,Ibague flood,Weather related,Flood,3
+COL,Colombia,2013,2013-11-03,Anori flood,Weather related,Flood,3
+COL,Colombia,2013,2013-05-02,Guamo flood,Weather related,Flood,85
+COL,Colombia,2013,2013-05-02,Belen landslide,Weather related,Wet mass movement,22
+COL,Colombia,2013,2013-09-06,Villahermosa gale,Weather related,Storm,3
+COL,Colombia,2013,2013-10-10,Caldono gale,Weather related,Storm,7
+COL,Colombia,2013,2013-06-30,Villahermosa gale,Weather related,Storm,7
+COL,Colombia,2013,2013-05-04,Antioquia floods,Weather related,Flood,29
+COL,Colombia,2013,2013-04-28,Villahermosa gale,Weather related,Storm,7
+COL,Colombia,2013,2013-05-20,El Doncello gale,Weather related,Storm,11
+COL,Colombia,2013,2013-08-30,Plato flood,Weather related,Flood,3
+COL,Colombia,2013,2013-10-16,Almaguer gale,Weather related,Storm,55
+COL,Colombia,2013,2013-11-19,Solano gale,Weather related,Storm,33
+COL,Colombia,2013,2013-03-21,San Juan de Rio Seco landslide,Weather related,Wet mass movement,11
+COL,Colombia,2013,2013-10-16,Almaguer Wildfire,Weather related,Wildfire,51
+COL,Colombia,2013,2013-04-16,Arauquita flood,Weather related,Flood,7
+COL,Colombia,2013,2013-02-05,Buenaventura Gale,Weather related,Storm,25
+COL,Colombia,2013,2013-10-31,Soacha avalanche,Weather related,Wet mass movement,11
+COL,Colombia,2013,2013-06-30,La Estrella flood,Weather related,Flood,3
+COL,Colombia,2013,2013-02-09,Cucuta flood,Weather related,Flood,7
+COL,Colombia,2013,2013-08-18,Medio Baudo avalanche,Weather related,Wet mass movement,14
+COL,Colombia,2013,2013-12-09,Riofrio gale,Weather related,Storm,11
+COL,Colombia,2013,2013-04-23,Tuquerres flood,Weather related,Flood,37
+COL,Colombia,2013,2013-05-20,Puerto Berrio flood,Weather related,Flood,14
+COL,Colombia,2013,2013-03-15,Choco March Flood,Weather related,Flood,2012
+COL,Colombia,2013,2013-11-02,Policarpa Landslide,Weather related,Wet mass movement,18
+COL,Colombia,2013,2013-01-11,San Andres surge,Weather related,Storm,29
+COL,Colombia,2013,2013-11-27,Fusagasuga Landslide,Weather related,Wet mass movement,11
+COL,Colombia,2013,2013-11-07,San Vicente de Chucuri flood,Weather related,Flood,7
+COL,Colombia,2013,2013-08-11,Quibdo flood,Weather related,Flood,3
+COL,Colombia,2013,2013-06-15,Montecristo landslide,Weather related,Wet mass movement,22
+COL,Colombia,2013,2013-07-22,Puerto Leguizamo landslide,Weather related,Wet mass movement,18
+COL,Colombia,2013,2013-08-25,Angelopolis avalanche,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-09-08,El Penon gale,Weather related,Storm,7
+COL,Colombia,2013,2013-09-09,Venadillo gale,Weather related,Storm,22
+COL,Colombia,2013,2013-09-28,Nueva Granada gale,Weather related,Storm,22
+COL,Colombia,2013,2013-05-22,Falan landslide,Weather related,Wet mass movement,59
+COL,Colombia,2013,2013-02-12,Sogamoso flood,Weather related,Flood,3
+COL,Colombia,2013,2013-07-19,Sucre gale,Weather related,Storm,7
+COL,Colombia,2013,2013-12-08,Mallama Landslide,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-04-30,Palmira gale,Weather related,Storm,11
+COL,Colombia,2013,2013-02-17,Giron landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-08-01,Cienaga gale,Weather related,Storm,11
+COL,Colombia,2013,2013-10-23,El Molino gale,Weather related,Storm,51
+COL,Colombia,2013,2013-04-26,Apartado flood,Weather related,Flood,7
+COL,Colombia,2013,2013-09-19,Buenavista gale,Weather related,Storm,7
+COL,Colombia,2013,2013-08-17,Santa Catalina gale,Weather related,Storm,7
+COL,Colombia,2013,2013-11-28,Manizales landslide and flood,Weather related,Wet mass movement,77
+COL,Colombia,2013,2013-03-17,Arauquita flood,Weather related,Flood,3
+COL,Colombia,2013,2013-07-19,Curillo flood,Weather related,Flood,3
+COL,Colombia,2013,2013-04-17,Sabanalarga gale,Weather related,Storm,3
+COL,Colombia,2013,2013-07-14,Medio Atrato gale,Weather related,Storm,59
+COL,Colombia,2013,2013-05-31,Buenaventura flood,Weather related,Flood,11
+COL,Colombia,2013,2013-05-08,Arauca flood,Weather related,Flood,3
+COL,Colombia,2013,2013-07-26,Nuqui gale,Weather related,Storm,3
+COL,Colombia,2013,2013-05-30,Patia flood,Weather related,Flood,25
+COL,Colombia,2013,2013-04-26,Lloro gale,Weather related,Storm,3
+COL,Colombia,2013,2013-03-25,San Jose del Fragua gale,Weather related,Storm,3
+COL,Colombia,2013,2013-05-27,Puerto Leguizamo gale,Weather related,Storm,3
+COL,Colombia,2013,2013-11-20,Huila November Flood,Weather related,Flood,29
+COL,Colombia,2013,2013-07-17,Putumayo floods,Weather related,Flood,577
+COL,Colombia,2013,2013-05-04,Cucuta flood,Weather related,Flood,3
+COL,Colombia,2013,2013-06-05,Carmen del Darien gale,Weather related,Storm,14
+COL,Colombia,2013,2013-04-18,Carmen de Apicala gale,Weather related,Storm,22
+COL,Colombia,2013,2013-01-22,Soledad Gale,Weather related,Storm,129
+COL,Colombia,2013,2013-09-14,Patia gale,Weather related,Storm,3
+COL,Colombia,2013,2013-12-03,Pereira flood,Weather related,Flood,7
+COL,Colombia,2013,2013-12-23,Genova Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-07-09,Manzanares gale,Weather related,Storm,14
+COL,Colombia,2013,2013-05-05,Caparri flood,Weather related,Flood,3
+COL,Colombia,2013,2013-06-04,Ibague landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-02-09,Nariño Earthquake,Geophysical,Earthquake,2179
+COL,Colombia,2013,2013-07-02,Ibague flood,Weather related,Flood,3
+COL,Colombia,2013,2013-10-30,Pasca gale,Weather related,Storm,3
+COL,Colombia,2013,2013-11-19,Choco November Flood,Weather related,Flood,284
+COL,Colombia,2013,2013-06-02,Pereira landslide,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-09-28,San Martin gale,Weather related,Storm,7
+COL,Colombia,2013,2013-10-05,Ariguani flood,Weather related,Flood,18
+COL,Colombia,2013,2013-07-13,Penol landslide,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-12-01,Giron Landslide,Weather related,Wet mass movement,14
+COL,Colombia,2013,2013-01-17,Firavitoba wildfire,Weather related,Wildfire,14
+COL,Colombia,2013,2013-02-17,Honda flood,Weather related,Flood,14
+COL,Colombia,2013,2013-02-21,Suan Wildfire,Weather related,Wildfire,14
+COL,Colombia,2013,2013-08-19,Istimina Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-08-15,Acevedo Landslide,Weather related,Wet mass movement,22
+COL,Colombia,2013,2013-12-29,Popayan landslide,Weather related,Wet mass movement,2220
+COL,Colombia,2013,2013-07-30,Arauquita flood,Weather related,Flood,44
+COL,Colombia,2013,2013-07-29,Tierralta gale,Weather related,Storm,22
+COL,Colombia,2013,2013-06-18,Alejandria landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-05-29,Santa Barbara landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-05-21,Medio Atrato gale,Weather related,Storm,469
+COL,Colombia,2013,2013-03-18,Santa Maria Avalanche,Weather related,Wet mass movement,29
+COL,Colombia,2013,2013-03-18,Rio Iro flood,Weather related,Flood,40
+COL,Colombia,2013,2013-04-23,Yacuanquer landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-03-17,Solita flood,Weather related,Flood,7
+COL,Colombia,2013,2013-03-06,Canton de San Pablo Gale,Weather related,Storm,514
+COL,Colombia,2013,2013-03-03,Rio Quito Gale,Weather related,Storm,192
+COL,Colombia,2013,2013-12-20,Tangua Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-08-28,Alto Baudo gale,Weather related,Storm,18
+COL,Colombia,2013,2013-08-17,Piamonte flood,Weather related,Flood,88
+COL,Colombia,2013,2013-07-13,Aquitania flood,Weather related,Flood,3
+COL,Colombia,2013,2013-06-01,Rovira landslide,Weather related,Wet mass movement,55
+COL,Colombia,2013,2013-05-23,Cartagena del Chaira flood,Weather related,Flood,3
+COL,Colombia,2013,2013-05-07,Puerto Rico flood,Weather related,Flood,92
+COL,Colombia,2013,2013-09-17,Bajo Baudo flood,Weather related,Flood,103
+COL,Colombia,2013,2013-08-21,Union Panamericana gale,Weather related,Storm,103
+COL,Colombia,2013,2013-11-19,Lloro flood,Weather related,Flood,62
+COL,Colombia,2013,2013-12-05,Caparrapi Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-11-26,Sabaneta Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-11-15,Santo Domingo Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-11-03,Yarumal Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-09-02,Pauna electric storm,Weather related,Storm,3
+COL,Colombia,2013,2013-08-16,Cordoba Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-07-18,Sogamoso landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-07-17,Totoro flood,Weather related,Flood,3
+COL,Colombia,2013,2013-07-03,Ocana Wildfire,Weather related,Wildfire,3
+COL,Colombia,2013,2013-05-27,San Marco electric storm,Weather related,Storm,3
+COL,Colombia,2013,2013-09-06,Barranquilla gale,Weather related,Storm,11
+COL,Colombia,2013,2013-05-21,Florencia landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-05-06,Valledupar flood,Weather related,Flood,3
+COL,Colombia,2013,2013-04-13,Ocamonte gale,Weather related,Storm,3
+COL,Colombia,2013,2013-04-05,Circasia gale,Weather related,Storm,3
+COL,Colombia,2013,2013-04-02,Barrancabermeja gale,Weather related,Storm,3
+COL,Colombia,2013,2013-04-01,Libano landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-02-13,Dosquebradas landslide,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-03-25,Tarso Gale,Weather related,Storm,11
+COL,Colombia,2013,2013-03-21,Pasto flood,Weather related,Flood,3
+COL,Colombia,2013,2013-11-18,Armenia Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-09-29,Buenaventura flood,Weather related,Flood,22
+COL,Colombia,2013,2013-09-06,Yopal gale,Weather related,Storm,3
+COL,Colombia,2013,2013-07-16,Piamonte gale,Weather related,Storm,3
+COL,Colombia,2013,2013-10-24,Quibdo landslides,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-11-19,Suaza Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-11-08,Galan gale,Weather related,Storm,3
+COL,Colombia,2013,2013-10-05,Chimichagua flood,Weather related,Flood,7
+COL,Colombia,2013,2013-06-12,Moniquira landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-05-26,Jerico landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-05-22,El Contadero landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-05-21,Salgar landslide,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-03-21,Medellin landslide,Weather related,Wet mass movement,11
+COL,Colombia,2013,2013-05-12,Pasto landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-05-05,Santa Rosa de Cabal landslide,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-03-20,San Pablo flood,Weather related,Flood,7
+COL,Colombia,2013,2013-03-15,Guadalajara de Buga avalanche,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-02-24,Cali landslide,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-02-01,Mocoa Gale,Weather related,Storm,7
+COL,Colombia,2013,2013-12-19,Corinto avalanche,Weather related,Wet mass movement,40
+COL,Colombia,2013,2013-08-07,Santa Rosa de Cabal landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-02-07,Santander Landslide,Weather related,Wet mass movement,14
+COL,Colombia,2013,2013-12-23,Corinto flood,Weather related,Flood,3
+COL,Colombia,2013,2013-07-09,Quibdo landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-12-26,Neiva Landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-11-25,La Vega flood,Weather related,Flood,7
+COL,Colombia,2013,2013-11-08,La Vega gale,Weather related,Storm,3
+COL,Colombia,2013,2013-09-24,Valdivia gale,Weather related,Storm,3
+COL,Colombia,2013,2013-07-26,Mocoa landslide,Weather related,Wet mass movement,7
+COL,Colombia,2013,2013-03-30,Ocana Wildfire,Weather related,Wildfire,22
+COL,Colombia,2013,2013-05-24,Rioblanco landslide,Weather related,Wet mass movement,3
+COL,Colombia,2013,2013-05-17,Medellin landslide,Weather related,Wet mass movement,11
+COL,Colombia,2014,2014-04-09,Riofrio municipality storm,Weather related,Storm,7
+COL,Colombia,2014,2014-01-30,Istmina municipality landslide,Weather related,Wet mass movement,11
+COL,Colombia,2014,2014-10-30,Fusagasuga municipality flood,Weather related,Flood,40
+COL,Colombia,2014,2014-11-12,Bajo Baudo municipality storm,Weather related,Storm,40
+COL,Colombia,2014,2014-03-30,Cajibio and Mercaderes municipality storm,Weather related,Storm,40
+COL,Colombia,2014,2014-01-24,Inirida municipality storm,Weather related,Storm,11
+COL,Colombia,2014,2014-12-21,Pasto municipality flood,Weather related,Flood,37
+COL,Colombia,2014,2014-03-19,Sampues municipality fire,Weather related,Wildfire,14
+COL,Colombia,2014,2014-12-30,Magui municipality flood,Weather related,Flood,18
+COL,Colombia,2014,2014-11-13,Algarrobo municipality flood,Weather related,Flood,18
+COL,Colombia,2014,2014-11-10,Ocana municipality flood,Weather related,Flood,14
+COL,Colombia,2014,2014-12-11,Medellin municipality landslide 2,Weather related,Wet mass movement,14
+COL,Colombia,2014,2014-12-02,Timbio and Jambalo municipalities landslide,Weather related,Wet mass movement,14
+COL,Colombia,2014,2014-09-17,Istimina and Quibdo municipalities landslide,Weather related,Wet mass movement,25
+COL,Colombia,2014,2014-04-26,Flooding and wet mass movements in Tolima dept.,Weather related,Wet mass movement,25
+COL,Colombia,2014,2014-02-12,Floods and landslides  in Tolima and the capital district provinces,Weather related,Wet mass movement,25
+COL,Colombia,2014,2014-12-22,San Bernardo del Viento municipality flood,Weather related,Flood,25
+COL,Colombia,2014,2014-10-11,Saravena municipality flood,Weather related,Flood,25
+COL,Colombia,2014,2014-09-21,Cajamarca municipality flood,Weather related,Flood,18
+COL,Colombia,2014,2014-07-22,Carmen Del Darien municipality storm,Weather related,Storm,33
+COL,Colombia,2014,2014-04-26,Buenaventura municipality flood,Weather related,Flood,33
+COL,Colombia,2014,2014-03-06,"Floods in Mallama and Ipiales municipalities in Narino dept., La Vega municipality in Cauca dept., Santa Maria, Palermo and Teruel municipalities in Huila dept.",Weather related,Flood,33
+COL,Colombia,2014,2014-10-12,Timbiqui and Lopez de Micay municipalities flood,Weather related,Flood,11
+COL,Colombia,2014,2014-06-25,Arauquita municipality flood,Weather related,Flood,44
+COL,Colombia,2014,2014-04-22,Olaya municipality landslide,Weather related,Wet mass movement,48
+COL,Colombia,2014,2014-07-06,El Tambo and Buenos Aires municipalities storm,Weather related,Storm,51
+COL,Colombia,2014,2014-01-27,Tumaco municipality flood,Weather related,Flood,62
+COL,Colombia,2014,2014-03-13,Bucaramanga municipality landslide,Weather related,Wet mass movement,11
+COL,Colombia,2014,2014-04-24,Anori municipality landslide,Weather related,Wet mass movement,11
+COL,Colombia,2014,2014-05-10,Turbaco municipality storm,Weather related,Storm,11
+COL,Colombia,2014,2014-11-13,Santa Rosa de Cabal municipality storm,Weather related,Storm,77
+COL,Colombia,2014,2014-05-11,Timana municipality landslide,Weather related,Wet mass movement,11
+COL,Colombia,2014,2014-08-22,Armenia municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-09-11,Popayan municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-09-12,Piedecuesta municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-09-29,Cucunuba municipality fire,Weather related,Wildfire,3
+COL,Colombia,2014,2014-10-03,Uramita municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-10-09,Barranquilla municipality flood,Weather related,Flood,3
+COL,Colombia,2014,2014-10-20,Armenia municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-10-31,Pasca municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-11-01,Bucaramanga municipality flood,Weather related,Flood,3
+COL,Colombia,2014,2014-08-15,Lopez de Micay municipality storm,Weather related,Storm,85
+COL,Colombia,2014,2014-11-11,Vetas municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-11-13,Don Matias municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-08-20,Bucamaranga municipality flood,Weather related,Flood,11
+COL,Colombia,2014,2014-11-24,Armenia municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-04-24,El Castillo municipality flood,Weather related,Flood,888
+COL,Colombia,2014,2014-12-14,Bogotà municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-10-09,Flood in Jamundi municipality,Weather related,Flood,954
+COL,Colombia,2014,2014-03-15,Rainy season in North and West Colombia,Weather related,Flood,1187
+COL,Colombia,2014,2014-07-28,Riosucio municipality storm,Weather related,Storm,2042
+COL,Colombia,2014,2014-07-14,Medellin municipality landslide,Weather related,Wet mass movement,14
+COL,Colombia,2014,2014-09-28,El Tambo municipality storm,Weather related,Storm,11
+COL,Colombia,2014,2014-07-08,Arauquita municipality flood,Weather related,Flood,14
+COL,Colombia,2014,2014-05-10,Pereira municipality landslide,Weather related,Wet mass movement,14
+COL,Colombia,2014,2014-10-18,Barbacoas municipality flood,Weather related,Flood,14
+COL,Colombia,2014,2014-10-24,Medio Atrato and Bajo Baudo municipalities flood,Weather related,Flood,99
+COL,Colombia,2014,2014-06-24,Unguia municipality flood,Weather related,Flood,22
+COL,Colombia,2014,2014-04-28,Soacha and Ubala landslides,Weather related,Wet mass movement,7
+COL,Colombia,2014,2014-06-02,Floods in Antioquia dept.,Weather related,Flood,107
+COL,Colombia,2014,2014-03-02,"Flooding and landslides affecting Cundinamarca, Tolima, Huila, Choco and Quindio departments",Weather related,Flood,125
+COL,Colombia,2014,2014-01-28,El Charco municipality flood,Weather related,Flood,22
+COL,Colombia,2014,2014-05-09,Angelopolis and Conception landslides,Weather related,Wet mass movement,7
+COL,Colombia,2014,2014-05-24,Venadillo storm and landslide,Weather related,Storm,7
+COL,Colombia,2014,2014-11-11,Timbiqui municipality flood,Weather related,Flood,136
+COL,Colombia,2014,2014-10-30,Ibague and Espinal municipalities storm,Weather related,Storm,7
+COL,Colombia,2014,2014-02-24,Timbio municipality storm,Weather related,Storm,7
+COL,Colombia,2014,2014-03-19,Cartagena municipality landslide,Weather related,Wet mass movement,7
+COL,Colombia,2014,2014-06-11,Guayabetal municipality landslide,Weather related,Wet mass movement,7
+COL,Colombia,2014,2014-10-07,Cartagena municipality storm,Weather related,Storm,7
+COL,Colombia,2014,2014-04-30,Certegui municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-01-30,Timana municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-02-25,Villagomez municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-03-14,Pacho municipality flood,Weather related,Flood,3
+COL,Colombia,2014,2014-03-24,Istmina municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-04-07,Orocue municipality fire,Weather related,Wildfire,3
+COL,Colombia,2014,2014-04-12,Guatica municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-05-02,Balboa municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-05-08,Iles municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-05-09,Marquetalia municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-05-22,Herveo municipality flood,Weather related,Flood,3
+COL,Colombia,2014,2014-06-07,Cajamarca municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-06-09,Inundations in Putumayo dept.,Weather related,Flood,3
+COL,Colombia,2014,2014-06-10,Villavicencio municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-06-10,Cordoba municipality flood,Weather related,Flood,3
+COL,Colombia,2014,2014-06-23,Villagomez municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-06-24,Cicuco municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-06-26,Quipile municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-07-02,Mocoa municipality landslide,Weather related,Wet mass movement,3
+COL,Colombia,2014,2014-07-20,Mistrato municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-07-26,San Roque municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-08-14,El Santuario municipality flood,Weather related,Flood,3
+COL,Colombia,2014,2014-01-06,San Agustín and Garrapatas overflown rivers after Sipi quake,Weather related,Flood,675
+COL,Colombia,2014,2014-08-03,Timbiqui municipality earthquake,Geophysical,Earthquake,3
+COL,Colombia,2014,2014-10-22,Chiles and Cerro Negro volcanic eruptions prompting preventive evacuations,Geophysical,Volcanic eruption,12750
+COL,Colombia,2014,2014-12-20,Bolivar municipality landslide,Weather related,Wet mass movement,11
+COL,Colombia,2014,2014-11-13,Tamalameque municipality flood,Weather related,Flood,18
+COL,Colombia,2014,2014-11-09,Dagua municipality storm,Weather related,Storm,3
+COL,Colombia,2014,2014-09-25,Istmina municipality landslide,Weather related,Wet mass movement,7
+COL,Colombia,2014,2014-09-19,Betulia municipality landslide,Weather related,Wet mass movement,7
+COL,Colombia,2014,2014-08-15,Yumbo municipality fire,Weather related,Wildfire,7
+COL,Colombia,2014,2014-06-14,Villavicencio municipality landslide,Weather related,Wet mass movement,7
+COL,Colombia,2014,2014-07-24,Atrato municipality flood,Weather related,Flood,44
+COL,Colombia,2015,2015-07-21,Cajamarca riverine flood,Weather related,Flood,7
+COL,Colombia,2015,2015-06-19,Labateca landslide,Weather related,Mass movement,167
+COL,Colombia,2015,2015-06-03,Chigorodo gale,Weather related,Storm,22
+COL,Colombia,2015,2015-06-27,Tenerife gale,Weather related,Storm,26
+COL,Colombia,2015,2015-07-21,El Canton del San Pablo flood,Weather related,Flood,26
+COL,Colombia,2015,2015-07-28,Penoli and Sonson gale,Weather related,Storm,26
+COL,Colombia,2015,2015-04-11,Palmas del Socorro earthquake,Geophysical,Earthquake,4
+COL,Colombia,2015,2015-07-28,Unguia earthquake,Geophysical,Earthquake,37
+COL,Colombia,2015,2015-03-10,Santander department earthquake,Geophysical,Earthquake,74
+COL,Colombia,2015,2015-04-09,"Medellin, Betania and Andesi landslides",Weather related,Mass movement,178
+COL,Colombia,2015,2015-06-30,San Vicente del Caguan floods and landslides,Weather related,Flood,4
+COL,Colombia,2015,2015-06-28,Puerto Gaitan flood,Weather related,Flood,4
+COL,Colombia,2015,2015-06-25,Gameza flood,Weather related,Flood,4
+COL,Colombia,2015,2015-06-23,Florencia landslide (June),Weather related,Mass movement,4
+COL,Colombia,2015,2015-06-20,Marsella landslide,Weather related,Mass movement,4
+COL,Colombia,2015,2015-05-28,Quibdo gale (May),Weather related,Storm,4
+COL,Colombia,2015,2015-04-18,Villamaria landslide,Weather related,Mass movement,4
+COL,Colombia,2015,2015-08-05,Filadelfia forest fire,Weather related,Wildfire,4
+COL,Colombia,2015,2015-05-27,Toledo landslide,Weather related,Mass movement,107
+COL,Colombia,2015,2015-06-07,Chitaga flood,Weather related,Flood,104
+COL,Colombia,2015,2015-03-12,Puerto Parra  gale,Weather related,Storm,118
+COL,Colombia,2015,2015-06-05,Labateca  flood,Weather related,Flood,93
+COL,Colombia,2015,2015-05-25,"Arauquita, Fortul and Saravena flood",Weather related,Flood,130
+COL,Colombia,2015,2015-05-29,"Bello, Remedio and Segovia landslide",Weather related,Mass movement,87
+COL,Colombia,2015,2015-05-14,Condoto and Medio San Juan Gale,Weather related,Storm,130
+COL,Colombia,2015,2015-06-24,Chitaga and Cacota landslides,Weather related,Mass movement,133
+COL,Colombia,2015,2015-07-22,Puerto Asis and San Miguel flood,Weather related,Flood,588
+COL,Colombia,2015,2015-06-02,Unguia gale,Weather related,Storm,148
+COL,Colombia,2015,2015-05-18,Salgar and Urrao flood mixed to landslides,Weather related,Flood,782
+COL,Colombia,2015,2015-05-25,Cubara flood,Weather related,Flood,59
+COL,Colombia,2015,2015-06-25,Cumbitara gale,Weather related,Storm,56
+COL,Colombia,2015,2015-05-24,Lopez de Micay flood,Weather related,Flood,37
+COL,Colombia,2015,2015-07-03,Cordoba landslide,Weather related,Mass movement,252
+COL,Colombia,2015,2015-07-23,Santa Marta flood,Weather related,Flood,37
+COL,Colombia,2015,2015-04-18,Guaitarilla flood,Weather related,Flood,33
+COL,Colombia,2015,2015-08-19,Armenia forest fire,Weather related,Wildfire,4
+COL,Colombia,2015,2015-08-07,Tamalameque gale,Weather related,Storm,289
+COL,Colombia,2015,2015-07-15,Riosucio flood,Weather related,Flood,185
+COL,Colombia,2015,2015-06-08,Barranquilla landslide,Weather related,Mass movement,22
+COL,Colombia,2015,2015-06-30,Purace gale,Weather related,Storm,19
+COL,Colombia,2015,2015-08-05,Quibdo gale,Weather related,Storm,19
+COL,Colombia,2015,2015-08-17,Santander de Quilichao gale,Weather related,Storm,19
+COL,Colombia,2015,2015-04-20,Angelopolis hailstorm,Weather related,Storm,15
+COL,Colombia,2015,2015-05-14,Florencia landslide,Weather related,Mass movement,15
+COL,Colombia,2015,2015-05-30,Santa Rosa gale,Weather related,Storm,15
+COL,Colombia,2015,2015-07-24,Cacota flood,Weather related,Flood,15
+COL,Colombia,2015,2015-05-28,San Jose del Guaviare flood,Weather related,Flood,11
+COL,Colombia,2015,2015-11-24,Urrao flash flood,Weather related,Flood,11
+COL,Colombia,2015,2015-03-15,Nocaima gale,Weather related,Storm,7
+COL,Colombia,2015,2015-03-18,La Celia flood,Weather related,Flood,7
+COL,Colombia,2015,2015-08-04,Taminango forest fire,Weather related,Wildfire,26
+COL,Colombia,2015,2015-03-21,Bogota landslide,Weather related,Mass movement,7
+COL,Colombia,2015,2015-08-20,Quibdo landslide,Weather related,Mass movement,4
+COL,Colombia,2015,2015-06-05,Acevedo landslide,Weather related,Mass movement,7
+COL,Colombia,2015,2015-08-18,Unguia gale (Aug),Weather related,Storm,4
+COL,Colombia,2015,2015-08-01,Rioacha gale,Weather related,Storm,4
+COL,Colombia,2015,2015-06-08,Cartagena del Chaira flood,Weather related,Flood,7
+COL,Colombia,2015,2015-07-25,Caparrapi forest fire,Weather related,Wildfire,4
+COL,Colombia,2015,2015-06-11,Villavicencio landslide,Weather related,Mass movement,7
+COL,Colombia,2015,2015-07-18,Cisneros landslide,Weather related,Mass movement,4
+COL,Colombia,2015,2015-04-15,Sandona flood,Weather related,Flood,244
+COL,Colombia,2015,2015-07-06,Silvia gale,Weather related,Storm,4
+COL,Colombia,2015,2015-07-01,Corozal landslide,Weather related,Mass movement,4
+COL,Colombia,2015,2015-05-25,Quibdo landslide (May),Weather related,Mass movement,4
+COL,Colombia,2015,2015-05-23,Medio Baudo landslide,Weather related,Mass movement,4
+COL,Colombia,2015,2015-05-17,Guaranda gale,Weather related,Storm,4
+COL,Colombia,2015,2015-08-13,Sabanalarga flood,Weather related,Flood,7
+COL,Colombia,2015,2015-04-17,Nueva Granada gale,Weather related,Storm,4
+COL,Colombia,2015,2015-04-15,Mercaderes gale,Weather related,Storm,4
+COL,Colombia,2015,2015-04-15,Santa Rosa de Osos landslide,Weather related,Mass movement,4
+COL,Colombia,2015,2015-04-06,San Jose del Fragua gale,Weather related,Storm,4
+COL,Colombia,2015,2015-04-04,Toledo landslide (April),Weather related,Mass movement,4
+COL,Colombia,2015,2015-03-21,Cumbitara gale (March),Weather related,Storm,4
+COL,Colombia,2015,2015-03-15,Aguachica forest fire,Weather related,Wildfire,4
+COL,Colombia,2015,2015-06-29,Solano flood,Weather related,Flood,30
+COL,Colombia,2015,2015-06-05,Sahagun gale,Weather related,Storm,74
+COL,Colombia,2015,2015-04-14,Libano and Chaparral gale,Weather related,Storm,26
+COL,Colombia,2016,2016-09-28,Hurricane Matthew,Weather related,Storm,210
+COL,Colombia,2016,2016-04-01,El Nino heavy rains and floods,Weather related,Flood,30629
+COL,Colombia,2017,2017-02-21,"Cundinamarca, Huila, Antioquia floods",Weather related,Flood,2000
+COL,Colombia,2017,2017-03-17,Colombia: first rainy season - March 2017,Weather related,Flood,17468
+COL,Colombia,2017,2017-09-06,Colombia: Second rainy season - country wide - September 2017,Weather related,Flood,1958
+COL,Colombia,2017,2017-07-17,Colombia: Landslide - Cundinamarca - 17/07/2017  ,Weather related,Wet mass movement,130
+COL,Colombia,2017,2017-08-02,Colombia: Guachaca River - Santa Marta - 02/08/2017,Weather related,Flood,90
+COL,Colombia,2017,2017-04-01,Mocoa mudslide,Weather related,Wet mass movement,3404
+COL,Colombia,2017,2017-08-09,Colombia: Gale - Córdoba - 09/08/2017,Weather related,Storm,111
+COL,Colombia,2018,2018-10-11,Colombia: Landslide - Caldas - 11/10/2018,Weather related,Wet mass movement,59
+COL,Colombia,2018,2018-10-01,Colombia: Floods - Antioquia - 01/10/2018,Weather related,Flood,925
+COL,Colombia,2018,2018-10-01,Colombia: Landslide - Boyaca - 01/10/2018,Geophysical,Dry mass movement,204
+COL,Colombia,2018,2018-07-28,Colombia: Flood - Antioquia - 28/07/2018,Weather related,Flood,2
+COL,Colombia,2018,2018-11-14,Colombia: Flood - Guajira - 14/10/2018,Weather related,Flood,1000
+COL,Colombia,2018,2018-04-10,Colombia: landslide - Antioquia - 10/04/2018,Weather related,Wet mass movement,4
+COL,Colombia,2018,2018-04-28,Colombia: Cauca River hydroelectrical project - Antioquia - April,Geophysical,Dry mass movement,26093
+COL,Colombia,2018,2018-03-31,Colombia: riverine flood - Nariño - 31/03/2018,Weather related,Flood,1
+COL,Colombia,2018,2018-02-15,Colombia: landslide - Antioquia - 15/02/2018,Weather related,Wet mass movement,67
+COL,Colombia,2018,2018-05-29,Colombia: Galeras Volcano - Nariño -29/05/2018,Geophysical,Earthquake,370
+COL,Colombia,2018,2018-06-21,Colombia: Flood - Arauca - 21/06/2018,Weather related,Flood,150
+COL,Colombia,2018,2018-03-22,Colombia: flash flood - Tolima - 22/03/2018,Weather related,Flood,16
+COL,Colombia,2018,2018-02-22,Colombia: landslide - QUindio - 22/02/2018,Weather related,Wet mass movement,15
+COL,Colombia,2018,2018-08-26,Colombia: landslide - Cundinamarca - 26/08/2018,Weather related,Wet mass movement,226
+COL,Colombia,2018,2018-05-02,Colombia: Flood - Meta - 02/05/2018,Weather related,Flood,740
+COL,Colombia,2018,2018-10-21,Colombia: Flood - Quindio - 21/10/2018,Weather related,Flood,15
+COL,Colombia,2018,2018-04-22,Colombia: landslide - Santander - 22/04/2018,Geophysical,Dry mass movement,22
+COL,Colombia,2018,2018-11-25,Colombia: Flood - Antioquia - 25/11/2018,Weather related,Flood,32
+COL,Colombia,2018,2018-05-08,Colombia: landslide - Santander - 08/05/2018,Weather related,Wet mass movement,200
+COL,Colombia,2018,2018-09-08,Colombia: Floods - Arauca - 08/09/2018,Weather related,Flood,1872
+COL,Colombia,2018,2018-06-09,Colombia: landslide - Risaralda - 10/06/2018,Weather related,Wet mass movement,15
+COL,Colombia,2018,2018-04-05,Colombia: flood - Norte de Santander - 05/04/2018,Weather related,Flood,85
+COL,Colombia,2018,2018-03-02,Colombia: oil spill - Santander - March 2018,,,178
+COL,Colombia,2018,2018-04-02,Colombia: mass movement / Dry Mass Movement - Antioquia - 02/04/2018,Geophysical,Dry mass movement,4
+COL,Colombia,2018,2018-11-01,Colombia: Floods - Risaralda - 01/11/2018,Weather related,Flood,7
+COL,Colombia,2018,2018-04-30,Colombia: riverine flood - Guaviare - 30/04/2018,Weather related,Flood,11
+COL,Colombia,2018,2018-07-26,Colombia: landslide - Santander - 26/07/2018,Weather related,Wet mass movement,333
+COL,Colombia,2018,2018-06-08,Colombia: mass movement / Dry Mass Movement - Antioquia - 08/06/2018,Geophysical,Dry mass movement,59
+COL,Colombia,2018,2018-08-16,Colombia: Floods - Putumayo - 16/08/2018,Weather related,Flood,30000
+COL,Colombia,2018,2018-04-14,Colombia: storm - Huila - 14/04/2018,Weather related,Storm,11
+COL,Colombia,2018,2018-06-02,Colombia: flood - Orinoquía region - June,Weather related,Flood,1721
+COL,Colombia,2018,2018-11-14,Colombia: Floods - Antioquia -  14/11/2018,Weather related,Flood,11
+COL,Colombia,2018,2018-10-21,Colombia: Floods - Magdalena - 21/10/2018,Weather related,Flood,938
+COL,Colombia,2018,2018-10-13,Colombia: Floods - Santander - 13/10/2018,Weather related,Flood,11
+COL,Colombia,2018,2018-05-18,Colombia: Flood - Sucre - 18/05/2018,Weather related,Flood,7
+COL,Colombia,2018,2018-06-06,Colombia: Flood - Choco - 06/06/2018,Weather related,Flood,1110
+COL,Colombia,2019,2019-07-23,"Colombia: Gale - Bolivar, Arjona - 23/07/2019",Weather related,Storm,4
+COL,Colombia,2019,2019-04-01,Colombia: Landslides - Boyaca - 01/04/2019,Weather related,Wet mass movement,63
+COL,Colombia,2019,2019-04-20,Colombia: Floods - Nariño - 20/04/2019,Weather related,Flood,207
+COL,Colombia,2019,2019-12-05,Colombia: Floods - Nariño (Barbacoas) - 05/12/2019,Weather related,Flood,7400
+COL,Colombia,2019,2019-07-28,"Colombia: Floods - Caldas, Chinchina - 28/07/2019",Weather related,Flood,4
+COL,Colombia,2019,2019-06-18,"Colombia: Flood - Putumayo, Puerto Guzman - 22/06/2019",Weather related,Flood,11248
+COL,Colombia,2019,2019-06-18,Colombia: Floods in Meta and Guaviare - 18/06/2019,Weather related,Flood,600
+COL,Colombia,2019,2019-11-04,Colombia: flood - Antioquia (Jericó) - 04/11/2019,Weather related,Flood,1000
+COL,Colombia,2019,2019-11-14,Colombia: Landslide - Antioquia (Medellin) - 14/11/2019,Weather related,Wet mass movement,19
+COL,Colombia,2019,2019-07-25,"Colombia: Floods - Caqueta, Florencia - 25/07/2019",Weather related,Flood,4
+COL,Colombia,2019,2019-06-12,"Colombia: Landslide - Antioquia, Caldas - 12/06/2019",Geophysical,Dry mass movement,56
+COL,Colombia,2019,2019-06-10,"Colombia: Riverine flood - Meta, La Macarena - 10/06/2019",Weather related,Flood,281
+COL,Colombia,2019,2019-07-26,"Colombia: Gale - Norte de Santander, Durania - 26/07/2019",Weather related,Storm,4
+COL,Colombia,2019,2019-07-29,"Colombia: Gale - Valle del Cauca, Jamundi - 25/07/2019",Weather related,Storm,11
+COL,Colombia,2019,2019-07-19,"Colombia: Gale - Chocó, Litoral de San Juan - 19/07/2019",Weather related,Storm,48
+COL,Colombia,2019,2019-07-19,"Colombia: Floods - Meta, Villavicencio - 19/07/2019",Weather related,Flood,70
+COL,Colombia,2019,2019-10-28,Colombia: Flash flood - Antioquia (Apartadó) - 28/10/2019,Weather related,Flood,8000
+COL,Colombia,2019,2019-11-09,Colombia: Flood - Antioquia (Vigía del Fuerte) - 12/11/2019,Weather related,Flood,81
+COL,Colombia,2019,2019-02-22,Colombia: Floods - Choco - 22/02/2019,Weather related,Flood,37
+COL,Colombia,2019,2019-06-11,Colombia: Landslide - Risaralda (Pereira) - 11/06/2019,Geophysical,Dry mass movement,1170
+COL,Colombia,2019,2019-05-26,"Colombia: Mudslide - Cundinamarca, Las Palmas - 26/06/2019",Weather related,Wet mass movement,56
+COL,Colombia,2019,2019-07-23,"Colombia: Gale - Bolivar, Maria la Baja - 23/07/2019",Weather related,Storm,67
+COL,Colombia,2019,2019-07-26,"Colombia: Wet Mass Movement - Choco, Quibdo - 26/07/2019",Weather related,Wet mass movement,4
+COL,Colombia,2019,2019-06-09,"Colombia: Flass flood - Valle del Cauca, Roldanillo - 09/06/2019",Weather related,Flood,15
+COL,Colombia,2019,2019-07-01,"Colombia: Floods - Bolivar, Cartagena - 15/07/2019",Weather related,Flood,4
+COL,Colombia,2019,2019-11-15,Colombia: Flood - Antioquia (Jericó) - 15/11/2019,Weather related,Flood,93
+COL,Colombia,2019,2019-07-05,"Colombia: Wet Mass Movement - Boyaca, Chiscas - 05/07/2019",Weather related,Wet mass movement,19
+COL,Colombia,2019,2019-11-16,Colombia: Floods - Santander (Cimitarra) - 16/11/2019,Weather related,Flood,7
+COL,Colombia,2019,2019-03-15,Colombia: Rainny season - nationwide - March-June 2019,Weather related,Flood,1406
+COL,Colombia,2019,2019-09-30,Colombia: Floods - Magdalena (Zona Bananera) - 30/09/2019,Weather related,Flood,2590
+COL,Colombia,2019,2019-10-13,Colombia: Landslide - Risaralda (Pereira) - 13/10/2019,Weather related,Wet mass movement,37
+COL,Colombia,2019,2019-07-29,"Colombia: Gale - Choco, Lloro - 27/07/2019",Weather related,Storm,11
+COL,Colombia,2019,2019-07-25,"Colombia: Gale - Cordoba, San Pelayo - 25/07/2019",Weather related,Storm,15
+COL,Colombia,2019,2019-04-21,Colombia: Landslide - Cauca region - 21/04/2019,Weather related,Wet mass movement,30
+COL,Colombia,2019,2019-02-24,"Colombia: Wildire - Sierra de Santa Marta, Cesar - 28/02/2019",Weather related,Wildfire,196
+COL,Colombia,2020,2020-05-12,Colombia: Mudslide - Nariño (Ricaurte) - 12/05/2020,Weather related,Wet mass movement,111
+COL,Colombia,2020,2020-06-27,Colombia: Flood - Meta (Guamal) - 27/06/2020,Weather related,Flood,1480
+COL,Colombia,2020,2020-08-29,Colombia: Landslide - Antioquia (Copacabana) - 29/08/2020,Weather related,Wet mass movement,37
+COL,Colombia,2020,2020-11-12,Colombia: La Niña Floods - Chocó - 12/11/2020,Weather related,Flood,35000
+COL,Colombia,2020,2020-06-23,Colombia: Flood - Antioquia (Marinilla) - 28/06/2020,Weather related,Flood,65
+COL,Colombia,2020,2020-06-23,Colombia: Flood - Antioquia (Vegachi) - 23/06/2020,Weather related,Flood,925
+COL,Colombia,2020,2020-04-01,Colombia: Riverine flood - Chocó (Bojayá) - 01/04/2020,Weather related,Flood,555
+COL,Colombia,2020,2020-06-23,Colombia: Flood - Antioquia (Donmatias) - 23/06/2020,Weather related,Flood,7
+COL,Colombia,2020,2020-01-28,Colombia: Flood - Santander (Floridablanca) - 28/01/2020,Weather related,Flood,481
+COL,Colombia,2020,2020-09-04,Colombia: Flood - Huila (Sueza) - 04/09/2020,Weather related,Flood,148
+COL,Colombia,2020,2020-02-26,Colombia: Floods - Santander (Piedecuesta) -  26/02/2020,Weather related,Flood,150
+COL,Colombia,2020,2020-09-13,Colombia: Landslide - Magdalena (Santa Marta) - 13/09/2020,Geophysical,Dry mass movement,140
+COL,Colombia,2020,2020-12-01,Colombia: Riverine Flood - Chocó (Riosucio) - 01/12/2020,Weather related,Flood,52
+COL,Colombia,2020,2020-04-25,Colombia: Flood - Antioquia (Andes and Jardín) - 25/04/2020,Weather related,Flood,555
+COL,Colombia,2020,2020-07-05,Colombia: Floods - Meta - 05/07/2020,Weather related,Flood,1994
+COL,Colombia,2020,2020-11-09,Colombia: Floods - Norte de Santander (Carmen de Tonchalá) - 09/11/2020,Weather related,Flood,111
+COL,Colombia,2020,2020-09-18,Colombia: Flood - Antioquia (Medellín) - 18/09/2020,Weather related,Flood,109
+COL,Colombia,2020,2020-08-31,Colombia: Landslide - Bogotá DC (Ciudad Bolivar) - 31/08/2020,Weather related,Wet mass movement,111
+COL,Colombia,2020,2020-06-09,Colombia: Floods - Magdalena (Aracataca) - 10/06/2020,Weather related,Flood,740
+COL,Colombia,2020,2020-04-03,Colombia: Landslide - Santander (Floridablanca) -  03/04/2020,Weather related,Wet mass movement,63
+COL,Colombia,2020,2020-04-03,Colombia: Landslide - Santander (Girón) -  03/04/2020,Weather related,Wet mass movement,370
+COL,Colombia,2020,2020-07-02,Colombia: Landslide - Antioquia (Jericó) - 03/07/2020,Weather related,Wet mass movement,22
+COL,Colombia,2020,2020-05-09,Colombia: Flood - Chocó (Bojayá) - 09/05/2020,Weather related,Flood,1300
+COL,Colombia,2020,2020-07-09,Colombia: Floods - Antioquia (Rionegro) - 09/07/2020,Weather related,Flood,15
+COL,Colombia,2020,2020-03-18,Colombia: Wildfire - La Guajira (Dibulla) - 18/03/2020,Weather related,Wildfire,111
+COL,Colombia,2020,2020-11-17,Colombia: Landslide - Norte de Santander (Cúcuta) - 18/11/2020,Weather related,Wet mass movement,285
+COL,Colombia,2020,2020-03-02,Colombia: Wildfire - Cundinamarca (Quetame) - 02/03/2020,Weather related,Wildfire,200
+COL,Colombia,2020,2020-11-14,"COL, NIC, HON, SLV, GUA, BLZ: Hurricane Iota - 14/11/2020",Weather related,Storm,8329
+COL,Colombia,2020,2020-12-08,Colombia: Landslide - Antioquia (San Luis) - 08/12/2020,Weather related,Wet mass movement,30
+COL,Colombia,2020,2020-10-31,12 COUNTRIES: Hurricane Eta - 31/10/2020,Weather related,Storm,8000
+COL,Colombia,2020,2020-11-17,Colombia: Floods - Norte de Santander (Villa del Rosario) - 17/11/2020,Weather related,Flood,1240
+COL,Colombia,2020,2020-11-12,Colombia: La Niña Floods - Antioquia - 12/11/2020,Weather related,Flood,248
+COL,Colombia,2020,2020-07-13,Colombia: Floods - Magdalena (Santa Marta) - 13/07/2020,Weather related,Flood,89
+COL,Colombia,2020,2020-02-12,Colombia: Landslide - Antioquia (Quebrada Negra) - 12/02/2020,Weather related,Wet mass movement,185
+COL,Colombia,2020,2020-02-17,Colombia: Landslide - Caldas (Pueblo Nuevo) - 17/02/2020,Weather related,Wet mass movement,37
+COL,Colombia,2020,2020-12-01,Colombia: Floods - Antioquia (Dabeiba) - 01/12/2020,Weather related,Flood,259
+COL,Colombia,2020,2020-10-22,Colombia: Floods - Antioquia (Chigordó and Urrao) - 22/10/2020,Weather related,Flood,11
