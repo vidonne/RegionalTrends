@@ -595,7 +595,7 @@ title(main = "Movement of Forcibly Displaced Population")
 
 The evolution in the last 20 years shows a significant increase in Internally Displaced Persons, an element specifically linked to the population in Colombia. In the last five years, the number of Asylum-seekers also  substantially increased. while the number of Refugees remained relatively stationary over time. Finally, the category Other of Concerns has seen a sharp increase and reflects the growing complexity of displacement crisis in the region (involving population at risk of displacement, host population and mixed movements...). 
 
-```{r ,message = FALSE, warning = FALSE,fig.height=6, size="small", fig.cap = "**| Evolution over time of the different Population of Concern**"}
+```{r ,message = FALSE, warning = FALSE,fig.height=5, size="small", fig.cap = "**| Evolution over time of the different Population of Concern**"}
 
 #Prepare data
 multiple_line_df <- end_year_population_totals_long.asy %>%
@@ -727,7 +727,7 @@ According to interviews and protection monitoring exercises conducted by UNHCR a
 
 Colombia remains the country that both host the largest number of displaced population (either across borders or internally).
  
-```{r message=FALSE, warning=FALSE, comment = "", fig.height=5, size="small",  fig.cap = "**| Largest Countries of Asylum**"}
+```{r message=FALSE, warning=FALSE, comment = "", fig.height=4, size="small",  fig.cap = "**| Largest Countries of Asylum**"}
 
 # 1.  WE NEED DATA DISAGREGATED BY Total Refugees, Asylum-seekers & Venezuelan Displaced Abroad
 # 2. tHE GRAPHS OF THE COUNTRIES ARE ON 5 YEARS BUT THE TITLE SAIS 20. IS THE EVOLUTION OF LAST 5 YEARS AND NOT 20. pLEASE CHECK THE TITLE
@@ -788,7 +788,7 @@ ggplot(bar_df, aes(x = reorder(CountryAsylumName, Value2), ## Reordering country
 When looking at other population types that did not cross a borders (i.e. other of Concerns & IDPs), obviously the situation of IDPs in Colombia stands out clearly. The second place though is also taken by "Other of Concerns" in Colombia, a figure that indeed includes 787,450 Host Community members and also returnee Colombians from Venezuela.
 
 
-```{r message=FALSE, warning=FALSE, comment = "", fig.height=5, size="small",  fig.cap = "**| Other Displacement**"}
+```{r message=FALSE, warning=FALSE, comment = "", fig.height=4, size="small",  fig.cap = "**| Other Displacement**"}
 #Prepare data2
 bar_df <- end_year_population_totals_long.asy %>%
   filter(Population.type  %in% c("IDP","OOC","STA") & 
@@ -885,10 +885,12 @@ topasyl <-  asylum_decisions %>%
   filter(TotalDecided  > 1000)  %>%
   mutate(CountryAsylumName = str_replace(CountryAsylumName, "United States of America", "USA"))
   
-#topasyl1 <-  topasyl  %>%
+topasyl1 <-  topasyl  %>%
+  arrange(desc(TotalDecided)) %>%
+  head(10)  
   
  
-rsdasyl <-  ggplot(topasyl, aes(y = TotalDecided, 
+rsdasyl <-  ggplot(topasyl1, aes(y = TotalDecided, 
              x = reorder(CountryAsylumName, TotalDecided))) + 
   scale_y_continuous(labels = format_si()) +
   #facet_grid(.~ ctry_asy) +  
@@ -925,9 +927,12 @@ topOrigin <-  asylum_decisions %>%
   filter(TotalDecided  != 0) %>%
   filter(TotalDecided  > 1000)  %>%
   mutate(CountryOriginName = str_replace(CountryOriginName, " \\(Bolivarian Republic of\\)", ""))
-  
+
+topOrigin1 <-  topOrigin  %>%
+  arrange(desc(TotalDecided)) %>%
+  head(10)   
  
-rsdorigin <- ggplot(topOrigin, aes(y = TotalDecided, 
+rsdorigin <- ggplot(topOrigin1, aes(y = TotalDecided, 
              x = reorder(CountryOriginName, TotalDecided))) + 
   scale_y_continuous(labels = format_si()) +
   #facet_grid(.~ ctry_asy) +  
@@ -957,7 +962,7 @@ patchworkRSDa +
   plot_annotation(
     title = 'Number of RSD applications in 2020  ',
    # subtitle = ' ',
-    caption = 'Source: UNHCR.org/refugee-statistics - Only Countries of Origin with more than 1,000 application during 2020 -\n Because of different types of procedure, data from the US may includes multiple applications per applicants compared to other countries '
+    caption = 'Source: UNHCR.org/refugee-statistics - Only Countries of Origin with more than 1,000 application during 2020 -\n Because of different types of procedure, data from the US may \n includes multiple applications per applicants compared to other countries '
   )  
   
 ```
@@ -975,9 +980,14 @@ For the purpose of international comparability, UNHCR only uses these two recogn
 
 
 ```{r echo=FALSE, warning=FALSE, cache=FALSE, tidy = TRUE, message=FALSE, comment = "", fig.height=5, size="small",  fig.cap = "**| Refugee Recognition rate in 2020**"}
-recoasyl <- ggplot(topasyl, aes(y = RefugeeRecognitionRate, 
+
+topasyl2 <-  topasyl  %>%
+  arrange(desc(RefugeeRecognitionRate)) %>%
+  head(10)  
+
+recoasyl <- ggplot(topasyl2, aes(y = RefugeeRecognitionRate, 
              x = reorder(CountryAsylumName, RefugeeRecognitionRate))) + 
-  scale_y_continuous(labels = scales::label_percent(accuracy = .01)) +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
   #facet_grid(.~ ctry_asy) +  
   geom_bar( stat ="identity", fill = unhcRstyle::unhcr_blue) +
   coord_flip() +
@@ -993,12 +1003,13 @@ recoasyl <- ggplot(topasyl, aes(y = RefugeeRecognitionRate,
   geom_hline(yintercept = 0, size = 1.1, colour = "#333333")  
 
 ## Filter top 10 
+topOrigin2 <-  topOrigin  %>%
+  arrange(desc(RefugeeRecognitionRate)) %>%
+  head(10) 
 
-#topOrigin <- topOrigin <- 
-
-recoorigin <- ggplot(topOrigin, aes(y = RefugeeRecognitionRate, 
+recoorigin <- ggplot(topOrigin2, aes(y = RefugeeRecognitionRate, 
              x = reorder(CountryOriginName, RefugeeRecognitionRate))) + 
-  scale_y_continuous(labels = scales::label_percent(accuracy = .01)) +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
   #facet_grid(.~ ctry_asy) +  
   geom_bar( stat ="identity", fill = unhcRstyle::unhcr_blue) +
   coord_flip() +
@@ -1024,13 +1035,54 @@ patchworkRSD +
   plot_annotation(
     title = 'Refugee Recognition Rate Comparison in 2020 ',
    # subtitle = ' ',
-    caption = 'Source: UNHCR.org/refugee-statistics - Only Countries of Origin with more than 1,000 application during 2020 -\n Because of different types of procedure, data from the US may includes multiple applications per applicants compared to other countries  '
+    caption = 'Source: UNHCR.org/refugee-statistics - Only Countries of Origin with more than 1,000 application during 2020 -\n Because of different types of procedure, data from the US may \n includes multiple applications per applicants compared to other countries  '
   )
 
 
 ```
 
 And for the minority of Venezuelan that can go through this process, the recognition rate is the actually the highest among other country of origin in the region. Central America people have good Refugee Recognition Rate (especially Honduras, Nicaragua, El Salvador, Cuba, Guatemala, Haiti and Mexico).
+
+An important element of context is review the number of applications (independently of their outcome) in relation with the size of asylum Seekers in the region.
+
+```{r message=FALSE, warning=FALSE, comment = "", fig.height=5, size="small", fig.cap = "**| Asylum Application vs Number of Asulym Seeker**"}
+
+asylumseekerAM2020 <- end_year_population_totals_long.asy %>%
+  filter(Population.type  %in% c("ASY") & 
+           Year == lastyear &
+           UNHCRBureau  == thisbureau &
+           !(is.na(UNHCRBureau)) ) %>%
+  group_by( CountryAsylumName) %>%
+  summarise(Asylum = sum(Value) )  %>%
+  filter(Asylum  > 1500)
+
+
+asylumseekerAM <- end_year_population_totals_long.asy %>%
+  filter(Population.type  %in% c("ASY") & 
+          # Year == lastyear &
+           UNHCRBureau  == thisbureau &
+           !(is.na(UNHCRBureau)) ) %>%
+  group_by( CountryAsylumName, Year) %>%
+  summarise(Asylum = sum(Value) )  %>%
+  mutate(Year = as.integer(Year) ) %>%
+  filter(CountryAsylumName  %in%  as.character(asylumseekerAM2020$CountryAsylumName)) %>%
+  filter(Year  > 2010)
+
+
+asylum_applicationsAM <- asylum_applications %>%
+                    ## Add reference for the filters
+                    dplyr::left_join( unhcrdatapackage::reference %>% 
+                                        select(coa_region = `UNHCRBureau`, iso_3),  by = c("CountryAsylumCode" = "iso_3")) %>% 
+                    filter(coa_region == thisbureau #& Year == lastyear
+                           ) %>% 
+                    group_by(CountryAsylumName, Year ) %>%
+                     mutate(Year = as.integer(Year) ) %>%
+                    summarise(Applied = sum(NumberApplications) )
+
+
+```
+
+
 
 This chart shows the RSD procedures in Americas. Below the same graphs by country are reproduced.  From left to the right: The first line represent the nationalities of the RSD applications. The second vertical line represent the institution where the RSD people applies: in Americas people applied mostly to the government, and sometimes directly to UNHCR. The third line describes the stage of the RSD applications (the process is different in every country). The forth and last vertical line shows the results of the RSD applications.
 
@@ -1312,23 +1364,26 @@ ggplot(multiple_line_df, aes(x = Year, y = Value2,
 
 Resettlement solution dramatically decreased in the region.
 
-```{r message=FALSE, warning=FALSE, comment = "", fig.height=4, size="small", fig.cap = "**| Ressettlement Trends in the last 25 years in the America**"}
-#Prepare data
-multiple_line_df <- solutions_long.asy %>%
-  filter(solutions_long.asy$UNHCRBureau == thisbureau  &
+```{r message=FALSE, warning=FALSE, comment = "", fig.height=3, size="small", fig.cap = "**| Ressettlement Trends in the last 25 years in the America**"}
+bar_rst <- solutions_long.asy %>%
+  mutate(Bureau = ifelse(UNHCRBureau == thisbureau, thisbureau, "Rest of the World")) %>%
+  filter( #solutions_long.asy$UNHCRBureau == thisbureau  &
            Year > (lastyear - 30) & 
           Solution.type.label == "Resettlement arrivals" ) %>%
-  group_by(Year, Solution.type.label ) %>%
+  group_by(Bureau, Year, Solution.type.label ) %>%
   summarise(Value2 = sum(Value) )  %>%
   mutate(Year = as.integer(Year) ) 
 
+bar_rst$Bureau <- factor(bar_rst$Bureau, levels = c( "Rest of the World", "Americas"))
+
 #Make plot
-ggplot(multiple_line_df, aes(x = Year, y = Value2 #, 
-                                              #colour = Population.type
+ggplot(bar_rst, aes(x = Year, y = Value2 , 
+                    fill = Bureau
                              )) + 
   geom_bar(stat = "identity", 
-           position = "identity", 
-           fill = "#0072bc" ) + # here we configure that it will be bar chart
+           position = "stack"#, 
+          # fill = "#0072bc"
+          ) + # here we configure that it will be bar chart
   
   scale_y_continuous( label = format_si()) + ## Format axis number
   xlim(c(lastyear-30, lastyear+1)) +
@@ -1533,6 +1588,47 @@ data %>%
         legend.position = "none",
         panel.grid.major.x = element_line(color = "#cbcbcb"), 
         panel.grid.major.y = element_blank()) ### changing grid line that should appear) 
+```
+The number of Asylum applications and recognized refugees in Central America and Mexico have greatly increased by almost 3 times between 2015 and 2020.
+
+```{r,message=FALSE, warning=FALSE, cache = TRUE, comment = "", fig.height=3, size="small", ig.cap = "**| Refugees & Asylum seekers from Central America**"}
+
+#Prepare data
+barcentral <- end_year_population_totals_long.ori %>%
+  filter(Population.type  %in% c("REF","ASY") & 
+           Year >2014 &
+           CountryOriginCode %in% c("BLZ", "SLV", "HND", "MEX", "GTM", "NIC", "CRI", "PAN")) %>%
+  group_by( #CountryOriginName,
+            Population.type, Population.type.label.short, Year) %>%
+  summarise(Value2 = sum(Value) )  %>%
+  mutate(Year = as.integer(Year) ) 
+
+#Make plot
+ggplot(barcentral, aes(x = Year, y = Value2 , 
+                      fill = Population.type.label.short
+                             )) + 
+  geom_bar(stat = "identity", 
+           position="stack"#, 
+           #fill = "#0072bc"
+           ) + # here we configure that it will be bar chart
+  
+ # facet_wrap( vars(CountryOriginName ), ncol = 3) +
+  scale_y_continuous( label = format_si()) + ## Format axis number
+ # xlim(c(2014, lastyear+1)) +
+  #facet_wrap( vars(Solution.type.label ), ncol = 2) +
+
+  geom_hline(yintercept = 0, size = 1.1, colour = "#333333") +
+  unhcRstyle::unhcr_theme(base_size = 8)  + ## Insert UNHCR Style
+  theme(panel.grid.major.y  = element_line(color = "#cbcbcb"), 
+        panel.grid.major.x  = element_blank(), 
+        panel.grid.minor = element_blank()) + ### changing grid line that should appear
+  ## and the chart labels
+  labs(title = "Trends in the past 5 years by Country of Origin ",
+       subtitle = "For Honduras, El Salvador, Guatemala, Belize, Mexico,\n Nicaragua, Costa Rica & Panama ",
+       x = "",
+       y = "",
+       caption = "Source: UNHCR.org/refugee-statistics ")
+
 ```
 
 
