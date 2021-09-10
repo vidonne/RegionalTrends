@@ -1045,7 +1045,7 @@ And for the minority of Venezuelan that can go through this process, the recogni
 
 An important element of context is review the number of applications (independently of their outcome) in relation with the size of asylum Seekers in the region.
 
-```{r message=FALSE, warning=FALSE, comment = "", fig.height=5, size="small", fig.cap = "**| Asylum Application vs Number of Asulym Seeker**"}
+```{r message=FALSE, warning=FALSE, comment = "", fig.height=4, size="small", fig.cap = "**| Asylum Application vs Number of Asulym Seeker**"}
 
 asylumseekerAM2020 <- end_year_population_totals_long.asy %>%
   filter(Population.type  %in% c("ASY") & 
@@ -1054,19 +1054,8 @@ asylumseekerAM2020 <- end_year_population_totals_long.asy %>%
            !(is.na(UNHCRBureau)) ) %>%
   group_by( CountryAsylumName) %>%
   summarise(Asylum = sum(Value) )  %>%
-  filter(Asylum  > 1500)
+  filter(Asylum  > 50000)
 
-
-asylumseekerAM <- end_year_population_totals_long.asy %>%
-  filter(Population.type  %in% c("ASY") & 
-          # Year == lastyear &
-           UNHCRBureau  == thisbureau &
-           !(is.na(UNHCRBureau)) ) %>%
-  group_by( CountryAsylumName, Year) %>%
-  summarise(Asylum = sum(Value) )  %>%
-  mutate(Year = as.integer(Year) ) %>%
-  filter(CountryAsylumName  %in%  as.character(asylumseekerAM2020$CountryAsylumName)) %>%
-  filter(Year  > 2010)
 
 
 asylum_applicationsAM <- asylum_applications %>%
@@ -1077,7 +1066,49 @@ asylum_applicationsAM <- asylum_applications %>%
                            ) %>% 
                     group_by(CountryAsylumName, Year ) %>%
                      mutate(Year = as.integer(Year) ) %>%
-                    summarise(Applied = sum(NumberApplications) )
+                    summarise(Applied = sum(NumberApplications) ) %>%
+  filter(CountryAsylumName  %in%  as.character(asylumseekerAM2020$CountryAsylumName)) 
+
+asylumseekerAM <- end_year_population_totals_long.asy %>%
+  filter(Population.type  %in% c("ASY") & 
+          # Year == lastyear &
+           UNHCRBureau  == thisbureau &
+           !(is.na(UNHCRBureau)) ) %>%
+  group_by( CountryAsylumName, Year) %>%
+  summarise(Asylum = sum(Value) )  %>%
+  mutate(Year = as.integer(Year) ) %>%
+  filter(CountryAsylumName  %in%  as.character(asylumseekerAM2020$CountryAsylumName)) %>%
+  filter(Year  > 2017) %>%
+  dplyr::left_join( asylum_applicationsAM,  by = c("CountryAsylumName", "Year")) %>% 
+  mutate(applicationrate = Applied /Asylum * 100 ) %>% 
+  mutate(applicationrate.cat = cut(applicationrate, breaks=c(0, 25, 50, 75,100, 500))) # %>%
+
+
+## First test combine Number of Application & Ratio as color
+ggplot(asylumseekerAM,
+       aes(x = reorder(CountryAsylumName, Asylum),
+           y = Asylum,
+           fill= applicationrate.cat  )) +
+  geom_bar( stat ="identity") +
+  #scale_fill_grey(start = 0.85, end = 0.15) +
+  #scale_fill_gradient(low = "#132B43",   high = "#56B1F7") +
+  coord_flip() +
+  facet_wrap( vars(Year ), ncol = 3) +
+  scale_y_continuous( label = format_si()) + ## Format axis number
+  theme(legend.position="none") +
+  geom_hline(yintercept = 0, size = 1.1, colour = "#333333") +
+    unhcRstyle::unhcr_theme(base_size = 8)  + ## Insert UNHCR Style
+    theme(panel.grid.major.x  = element_line(color = "#cbcbcb"),
+          panel.grid.major.y  = element_blank(),
+          panel.grid.minor = element_blank()) + ### changing grid line that should appear
+    ## and the chart labels
+    labs(title = "The ratio of Asylum Seekers applying for Refugee Status is decreasing ",
+         subtitle = "Ratio between Numbers of Asylum Seekers and Asylum Application ",
+         x = "",
+         y = "",
+         caption = "Source: UNHCR.org/refugee-statistics - only for countries with more than 50,000 Asylum Seekers")
+
+## Second test show Ratio evolution over time per country... 
 
 
 ```
@@ -1478,6 +1509,15 @@ ggplot(data = world) +
   geom_point(data = allVene, aes(x = Longitude, y = Latitude , size = Value2 ), 
              alpha = 0.6, colour = "red") +
   scale_size_area( max_size = 20) +
+  
+  ggrepel::geom_label_repel(   data = allVene ,
+    mapping = aes(x = Longitude, y = Latitude,
+      label = stringr::str_glue(
+        "{CountryAsylumName}\n{Label} ")  # how label displays
+      ), 
+    size = 3,                                              # text size in labels
+    min.segment.length = 0)+                               # show all line segments  
+  
  #   coord_sf(crs = "+proj=robin") +
   labs(title = "All Top 10 Countries hosting Venezuelans of Concern are in the Americas",
        subtitle = "As of 2020",
@@ -1591,7 +1631,7 @@ data %>%
 ```
 The number of Asylum applications and recognized refugees in Central America and Mexico have greatly increased by almost 3 times between 2015 and 2020.
 
-```{r,message=FALSE, warning=FALSE, cache = TRUE, comment = "", fig.height=3, size="small", ig.cap = "**| Refugees & Asylum seekers from Central America**"}
+```{r,message=FALSE, warning=FALSE, cache = TRUE, comment = "", fig.height=4, size="small", ig.cap = "**| Refugees & Asylum seekers from Central America**"}
 
 #Prepare data
 barcentral <- end_year_population_totals_long.ori %>%
@@ -1643,22 +1683,56 @@ To respond to this specific situation, UNHCR has developed a massive [scale-up p
 
 In this last chapter, we discuss 3 mains statistical challenges specific to the region.
 
+:::{.bg-blue}      
+The  [Expert Group on Refugee and IDP Statistics (EGRIS)](https://ec.europa.eu/eurostat/web/expert-group-on-refugee-statistics),  in  which  UNHCR  belongs  to  the  steering committee, has released the [International Recommendations on Refugee Statistics (IRRS)](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-18-004), which were adopted by the United Nations Statistical Commission during its 2018 session.
+In Americas the refugees data are manly produced by dedicated Governments Ministries, departments or agencies (e.g. CONARE), that are usually the competent authorities for maintaining administrative registers of refugees and asylum seekers.  In some situation, the specific provision that ministries may take can create discrepancies with the definition used by statistical conventions that allows for international comparison (_as it happens for the definition of unemployment where within the same countries different figures can be used_). Indeed refugee and IDP statistics are often very politically sensitive
+
+There are different sources and multiple approaches available for the collection of refugee data such as administrative registers, population censuses or household surveys. Each data collection method has its own strengths and limitations and the quality of estimation is increased by crossing and combining different techniques. NSO's are often in charge of National Household Survey. It is of strategic important to strengthen or build relations between UNHCR and National Statistics Offices (though working groups; Memorandum of Understanding (MoU); consultative committees; interagency committees; and a system of focal points between NSOs and data producers...) for the following reasons: 
+
+ * NSOs are indeed a key component of the Sustainable Development Goal Framework and remains the authority in charge of providing the data.  
+ * NSO's are the main stakeholder to mobilize in order to include Refugees and Forcibly Displaced Persons within their National Household Survey programme.  
+ * Many population estimations request advanced procedures and techniques that can hardly be implemented without the expertise available within NSO  
+
+The development of comparable refugee statistics across time and space is an important issue for planning and policy making, public debate, the international community, as well as both countries of origin and host countries. The production of international refugee statistics calls for the adoption of harmonized and standardized definitions, variables and concepts. The nature of this process is complex and faces various difficulties and limitations, which include:
+a) Limitations concerning determination of population size owing to use of different data sources and different definitions.
+b) Limitations concerning international comparability and the need to harmonize. 
+
+
+To improve access to refugee statistics at the national level:
+i) Include refugee publications and statistical databases on national statistics websites.
+ii) Provide training to the media and users in the concepts and definitions relating to refugee and asylum statistics.
+iii) Improve access to data by making anonymised databases accessible to users, where possible supporting microdata access in secure data enclaves.
+:::
+
 ## Using Survey to get demographic profiles
 
 
 Often demographic data are not available in Americas. Available demographic data for persons of concern in the region for __`r lastyear`__ show a balance between sex. Of the total population, more than 30 per cent are children below the age of 18 and around the 5 per cent are elderly 60 years and above. More than 35 per cent are between 18-59 years.
 
 ```{r message=FALSE, warning=FALSE, fig.cap = "**| How far Demographic breakdown is available?**"}
+
+demographics1 <-  demographics %>%
+                   dplyr::left_join( unhcrdatapackage::reference %>% 
+                                       select(UNHCRBureau, iso_3),  by = c("CountryAsylumCode" = "iso_3")) %>% 
+                   filter(UNHCRBureau == thisbureau & Year == lastyear) %>%
+                  mutate ( totGen = FemaleTotal +MaleTotal,
+                           totbreak = Female04 + Female511 + Female1217 + Female1859 + Female60ormore + FemaleUnknown +
+                             Male04 + Male511 + Male1217 + Male1859 + Male60ormore + MaleUnknown,
+                           hasbreak = ifelse(Total - totGen == 0, "yes", "no" ))
+
 ## percentage of the total population within the country for which demographic breakdown is available
+demographics.break <-  demographics1 %>%
+  group_by(CountryAsylumName, Population.type.label.short, hasbreak ) %>%  
+  summarise(Total = sum(Total) ) 
 
 ```
 
 ```{r message=FALSE, warning=FALSE, comment = "", fig.height=4, size="small", fig.cap = "**| Demographic breakdown**"}
-demographics <- merge(x = demographics, by.x="CountryOriginCode", y = reference, by.y= "iso_3", all.x = TRUE)
+
 #names(demographics)
-pyramid <-  demographics[ demographics$Year == max(demographics$Year),
-                          c("REGION_UN",
-                          "Female04",
+pyramid <-  demographics1[ demographics1$Year == max(demographics1$Year),
+                          c(
+                              "Female04",
                               "Female511",
                               "Female1217",
                               "Female1859",
@@ -1740,18 +1814,22 @@ ggplot(pyramid3, aes(x = age,
   geom_bar(stat = "identity") +
   scale_y_continuous(labels = abs, limits = max(pyramid3$pc) * c(-1,1)) +
   labs(title = "Population Pyramid (proportion of age group)  ",
-       subtitle = paste0("For all displaced population as of ", max(demographics$Year)),
+       subtitle = paste0("For all displaced population in ", thisbureau, " as of ", max(demographics$Year)),
        x = "", 
        y = "Percent of population",
        caption =  "Source: UNHCR Population Statistics") +
 #  scale_colour_manual(values = c("pink", "steelblue"),
+  
+ # scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
   scale_colour_manual(values = c("#126db4","#01ab91"), # based on Asia Report
                       aesthetics = c("colour", "fill")) +
   coord_flip()+
   #ggimage::geom_image(data = icon, aes(image = path, x =age, y = pc)) +
   #annotation_raster(women, 15, 20, "0-4", "5-11") +
   #annotation_raster(men, -15, -20, "0-4", "5-11") + 
-  unhcRstyle::unhcr_theme(base_size = 8) 
+  unhcRstyle::unhcr_theme(base_size = 8) +
+ theme(panel.grid.major.x = element_line(color = "#cbcbcb"), 
+          panel.grid.major.y = element_blank())
 
 # ggplot(data = icon, aes(x = age,  
 #                       y =  pc)) + 
@@ -1832,9 +1910,7 @@ In the ASR 2020 reported 72,458 Nicaraguans, the 1 per cent of population (Accor
   
 ## IDP Population Estimation in Colombia
 
-Colombia IDP are the Internally Displaced Persons (IDP) is the 17 per cent of world's IDP (8,253,000 over 48,557,439). This is the official figure. This is a historical and cumulative figure of IDPs is being used nowadays. 
-
-The evolution in the last 20 years shows a significant increased in Internally Displaced Persons, especially in Colombia (8,252,788 over `r totalIDP` in the region). 
+The provided estimation of Internally Displaced Persons (IDP) in Colombia accounts for the 17 per cent of the total number of IDP. This figures represent an historical and cumulative number, based on people internally displaced since 1985 by the armed conflict in Colombia. The figure used in UNHCR Official Statistics is based on the total number of people displaced in Colombia according to the RUV, a registry maintained by the Colombian government’s UARIV. Colombian law holds that displaced people can declare themselves as such for up to two years after they become displaced.  
 
 ```{r message=FALSE, warning=FALSE, cache= TRUE}
 ## Chart comparing UNHCR & IDMC figures 
@@ -1855,6 +1931,8 @@ displacement_data_colombia <- read_sans_hxl(here::here("data-raw/displacement_da
 names(displacement_data_colombia)[4] <- "IDMC"
 ```
 
+
+The Internal Displacement Monitoring Centre (IDMC) has been established in 1998 as part of the Norwegian Refugee Council (NRC) to offered a rigorous, independent and trusted service to the international community. As per [IDMC](https://www.internal-displacement.org/countries/colombia), the total number of IDPs as of 31 December 2020 is 4,922,000. The comparison of figures is actually showing significant discrepancies. 
 
 ```{r  message=FALSE, warning=FALSE, comment = "", fig.height=4, size="small", fig.cap = "**| IDP Population estimates in Colombia**"}
 
@@ -1908,16 +1986,9 @@ ggplot(unhcr_idp_Colombia2,
 ```
  
 
-Total number of IDPs as of 31 December 2020 as per [IDMC](https://www.internal-displacement.org/countries/colombia): 4,922,000 
- 
+ IDMC includes some information on [potential caveheat](https://www.internal-displacement.org/sites/default/files/2021-05/figure-analysis-col_0.pdf) as pending further information and evidence, those who are in a situation of displacement, but progressing towards a durable solution have not been included.  IDMC therefore subtracts registered IDPs who are deceased as well as those who have made progress towards a durable solution. Estimates of the latter are based on RUV’s vulnerability assessment, which evaluates IDPs’ vulnerabilities associated with housing, family reunification, access to identification documents, nutrition, health, education and income.  
 
-This figure refers to people internally displaced since 1985 by the armed conflict in Colombia.  Pending further information and evidence, those who are in a situation of displacement, but progressing towards a durable solution have not been included. Though IDMC includes some information on [potential caveheat](https://www.internal-displacement.org/sites/default/files/2021-05/figure-analysis-col_0.pdf)
- 
-:::{.bg-blue}
-This figure was obtained from the RUV, which is maintained by the Colombian government’s UARIV. It is based on the total number of people displaced in Colombia according to the RUV. From this total number, IDMC subtracts registered IDPs who are deceased as well as those who have made progress towards a durable solution. Estimates of the latter are based on RUV’s vulnerability assessment, which evaluates IDPs’ vulnerabilities associated with housing, family reunification, access to identification documents, nutrition, health, education and income.  
 
-???We have high confidence in this figure as Colombia’s RUV is the most comprehensive register of IDPs in the world. However, Colombian law holds that displaced people can declare themselves as such for up to two years after they become displaced. Combined with the administrative processes for reviewing cases, this can lead to a time lag between the start date of displacement and the time of its registration in the Colombian government’s database. For this reason, this figure is likely to be a slight underestimate and it may not represent the full extent of displacement in the country. This said, it provides the most representative and accurate picture of internal displacement to date in Colombia. 
-:::
 
 A revision of the IDPs in Colombia can change this figure using [EGRIS IRIS](https://www.unhcr.org/statistics/unhcrstats/600188974/international-recommendations-internally-displaced-persons-statistics-iris.html) - the Composite indicator measurement on HH Survey could be an opportunity.  
 
@@ -1929,63 +2000,10 @@ As for any statistics, it is important to understand the limitation behind the n
 
 It is only in a minority of situation that Statistical data within the country are sources through  National Statistics Office (NSO), as often information on Refugees and RSD figures are directly provided by Refugees Authority within the local administration. Indeed, discussions have been established with National Statistics Offices in less than half of the operations. In half of the country, once data have been transformed and consolidated in the format used for its needs,  UNHCR needs to obtain the approval of the government to disseminate the final figures.
 
-It is of strategic important to strengthen or build relations between UNHCR and National Statistics Offices for the following reasons: 
-
- * NSOs are indeed a key component of the Sustainable Development Goal Framework and remains the authority in charge of providing the data.
-
- * NSO's are the main stakeholder to mobilize in order to include Refugees and Forcibly Displaced Persons within their National Household Survey programmes.
- 
- * Many population estimations request advanced procedures and techniques that can hardly be implemented without the expertise available within NSO
- 
-The  [Expert Group on Refugee and IDP Statistics (EGRIS)](https://ec.europa.eu/eurostat/web/expert-group-on-refugee-statistics),  in  which  UNHCR  belongs  to  the  steering committee, has released the [International Recommendations on Refugee Statistics (IRRS)](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-18-004) , which were adopted by the United Nations Statistical Commission during its 2018 session and is a strong Last updated: February 2021 reference for refugee statistics reporting methodologies. UNHCR supports National Statistical Offices (NSO) to build capacity to report on forced displacement in countries that currently lack disaggregated data on refugees. United Nations Statistical Commission is high level statistical authority in world.
-
-                       
-:::{.bg-blue}                       
-The official statistics is the only way to secure quality and durable statics on refugee data.The EGRIS book International Recommendations on Refugee Statistics (IRRS) describes the role of official statistics on refugee data, please see chapter 6.
-
-In the world many low and middle-income countries draw their data on refugees from records maintained by UNHCR. In Americas the refugees data are manly produced by the governments. 
-There are different sources and multiple approaches available for the collection of refugee data such as
-administrative registers, population censuses, surveys or combinations of these. Each data collection method has its own strengths and limitations
-
-In Americas Ministries, departments or agencies (e.g. CONARE), are usually the competent authorities for maintaining administrative registers of refugees and asylum seekers. Often, their legal basis and rationale do not include statistical requirements. In these cases, efforts to collaborate and gain cooperation between NSOs and relevant agencies can become problematic. The restrictive laws of ministries that may take precedence over statistics laws, can reduce the power of National Statistics Offices (NSOs) and interrupt the production of statistics. National statistical systems are usually, but not always, directed and coordinated by a NSO
-
-A well-functioning system for production of statistics requires a stable and transparent legal basis which can guarantee the independence, integrity and accountability of statistical authorities according to the Fundamental Principles of Official Statistics
-
-However, refugee statistics can be very politically sensitive. Dissemination is the time when the statistical product is released to users. It represents one of the most important activities of the national statistical system. Dissemination should be viewed as the link between data availability and the use of statistics for policymaking purposes.
-
-National Statistics Offices (NSOs), empowered by law, can enter into data sharing arrangements with data producing agencies to collect, compile and harmonize data, or to collaborate and share data. These may include informal or formal agreements such as: working groups; Memoranda of Understanding (MOU); consultative committees; interagency committees; and a system of focal points between NSOs and data producers. Such partnerships require mutual understanding of priorities, sharing of expertise, consistency in the integration, interpretation and use of data, and continuous communication about data stewardship, with a feedback loop between the agencies concerned when problems arise so that the issues can be resolved between the agencies concerned.
-
-Sharing data with NSOs may be perceived as risky by immigration authorities, as data may be
-misrepresented in statistical publications. To mitigate the risk of data interpretation issues, it is important to implement oversight structures around the use of the data. 
-
-National statistical systems produce the official data according with the international statistical system. National statistical  systems vary from country to country, depending on the national administrative and governance structures, the evolution of the country’s statistical system, and the state of development of and resources available for official statistics. 
-
-More broadly, national statistical systems are guided by a number of international and regional standards,
-some of which are mandatory and some advisory. These are intended to coordinate the production of
-statistics internationally, to improve the comparability of statistics between countries, and to maintain
-quality standards.
 
 
-Challenges to harmonizing refugee statistics
-
-The development of comparable refugee statistics across time and space is an important issue for planning
-and policymaking, public debate, the international community, as well as both countries of origin and
-host countries. The production of international refugee statistics calls for the adoption of harmonized and
-standardized definitions, variables and concepts. The nature of this process is complex and faces various
-difficulties and limitations, which include:
-a) Limitations concerning determination of population size owing to use of different data sources and
-different definitions.
-b) Limitations concerning international comparability and the need to harmonize.
 
 
-To improve access to refugee statistics at the national level:
-
-i) Include refugee publications and statistical databases on national statistics websites.
-ii) Provide training to the media and users in the concepts and definitions relating to refugee and
-asylum statistics.
-iii) Improve access to data by making anonymised databases accessible to users, where possible
-supporting open microdata in secure data enclaves.
-:::
                        
                        
                        
